@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const { connectDB } = require('./config/db');
 const productRoutes = require('./routes/productRoutes');
 require('dotenv').config();
@@ -9,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 
 // Cấu hình mở các file giao diện tĩnh trong thư mục public
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Đăng ký toàn bộ đường dẫn API với tiền tố /api
 app.use('/api', productRoutes);

@@ -1,4 +1,8 @@
 
+
+USE QuanLyChuoiThoiTrang;
+GO
+
 -- ==================================================
 -- INSERT SEED DATA
 -- ==================================================
@@ -35,6 +39,25 @@ INSERT INTO SAN_PHAM (Ten_San_Pham, Mo_Ta, Chat_Lieu, Ma_Danh_Muc) VALUES ('Ao c
 INSERT INTO SAN_PHAM (Ten_San_Pham, Mo_Ta, Chat_Lieu, Ma_Danh_Muc) VALUES ('Vay hoa nhi vintage', N'Váy hoa nhí chất voan chiffon cao cấp có lớp lót trong kín đáo.', 'Chiffon', 6);
 INSERT INTO SAN_PHAM (Ten_San_Pham, Mo_Ta, Chat_Lieu, Ma_Danh_Muc) VALUES ('Ao thun Nu Oversized', N'Áo thun nữ phom rộng thoải mái cá tính.', 'Cotton', 5);
 INSERT INTO SAN_PHAM (Ten_San_Pham, Mo_Ta, Chat_Lieu, Ma_Danh_Muc) VALUES ('Quan short Kaki Nu', N'Quần short kaki cạp cao tôn dáng.', 'Kaki Cotton', 6);
+GO
+
+INSERT INTO ANH_SAN_PHAM (Duong_Dan, Ma_San_Pham) VALUES 
+('/images/products/Ao thun Cotton Compact V2.jpg', 1),
+('/images/products/Ao thun the thao Promax.jpg', 2),
+('/images/products/Ao khoac gio Windbreaker.jpg', 3),
+('/images/products/Ao hoodie ni chan cua.jpg', 4),
+('/images/products/Quan short Kaki Excool.jpg', 5),
+('/images/products/Quan short the thao 5 inch.jpg', 6),
+('/images/products/Ao polo Coolmate Premium.jpg', 7),
+('/images/products/Quan jeans Slim Fit.jpg', 8),
+('/images/products/Quan short ni Everyday.jpg', 9),
+('/images/products/Ao so mi Oxford Dai Tay.jpg', 10),
+('/images/products/Tat co trung Bamboo.jpg', 11),
+('/images/products/Mu luoi trai the thao.jpg', 12),
+('/images/products/Ao croptop thun gan.jpg', 13),
+('/images/products/Vay hoa nhi vintage.jpg', 14),
+('/images/products/Ao thun Nu Oversized.jpg', 15),
+('/images/products/Quan short Kaki Nu.jpg', 16);
 GO
 
 INSERT INTO BIEN_THE_SAN_PHAM (Kich_Co, Mau_Sac, Gia_Niem_Yet, Ma_Vach_SKU, So_Luong_Ton, Ma_San_Pham) VALUES 
